@@ -19,9 +19,10 @@ When specifying a color for a series in your graph, pass in an object with the
 following parameters as such:
 
 {
-  patternFixed: patternFixed
-  color1: color1
-  color2: color2
+  patternFixed: patternFixed,
+  color1: color1,
+  color2: color2,
+  strokeWidth: 1
 }
 
 where patternFixed is a string from the list of fixed patterns supported, while
@@ -37,6 +38,7 @@ series: [{
   color: {
     patternFixed: "striped",
     color1: "#FF0000",
-    color2: "#000000"
+    color2: "#000000",
+	strokeWidth: 2
   }
 }]

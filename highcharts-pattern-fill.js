@@ -8,6 +8,7 @@
  *                    -striped
  * - color1:       Main background color of your fill pattern
  * - color2:       Main foreground color (typically, of the pattern, itself) of your fill pattern. 
+ * - strokeWidth:  Width of color2 stripe
  */
 (function() {
     var idCounter = 0;
@@ -43,7 +44,7 @@
                           y1: 5,
                           x2: 5,
                           y2: 0,
-                          'stroke-width': 1,
+                          'stroke-width': color.strokeWidth ? color.strokeWidth : 1,
                           stroke: color.color2 ? color.color2 : "#000000"
                         })
                     .add(pattern);
