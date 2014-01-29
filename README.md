@@ -9,7 +9,7 @@ to use.
 Fixed patterns supported
 ------------------------
 
-* striped
+* striped (2 pixels)
 
 
 How to use
@@ -21,8 +21,7 @@ following parameters as such:
 {
   patternFixed: patternFixed,
   color1: color1,
-  color2: color2,
-  strokeWidth: 1
+  color2: color2
 }
 
 where patternFixed is a string from the list of fixed patterns supported, while
@@ -38,7 +37,6 @@ series: [{
   color: {
     patternFixed: "striped",
     color1: "#FF0000",
-    color2: "#000000",
-	strokeWidth: 2
+    color2: "#000000"
   }
 }]
